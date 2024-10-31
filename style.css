@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  #status-message {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .fail {
+    color: red;
+  }
+  
