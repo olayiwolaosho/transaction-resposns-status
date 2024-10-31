@@ -1,23 +1,59 @@
-body {
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Center container */
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: Arial, sans-serif;
-    margin: 0;
     background-color: #f0f0f0;
   }
   
-  #status-message {
-    font-size: 2em;
-    color: #333;
+  /* Status container */
+  .status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
   
-  .success {
+  /* Icons */
+  #status-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  .success #status-icon::before {
+    content: "✔"; /* Checkmark for success */
     color: green;
   }
   
-  .fail {
+  .fail #status-icon::before {
+    content: "✖"; /* Cross mark for failure */
+    color: red;
+  }
+  
+  /* Message text */
+  #status-message {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .success #status-message {
+    color: green;
+  }
+  
+  .fail #status-message {
     color: red;
   }
   
