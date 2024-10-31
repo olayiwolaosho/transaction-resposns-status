@@ -27,20 +27,18 @@
     text-align: center;
   }
   
-  /* Icons */
+  /* Icons with inline SVGs */
   #status-icon {
     font-size: 4em;
     margin-bottom: 20px;
   }
   
   .success #status-icon::before {
-    content: "✔"; /* Checkmark for success */
-    color: green;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="green"><circle cx="24" cy="24" r="24" fill="green"/><path d="M19 29l-5-5 2-2 3 3 7-7 2 2-9 9z" fill="white"/></svg>');
   }
   
   .fail #status-icon::before {
-    content: "✖"; /* Cross mark for failure */
-    color: red;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="red"><circle cx="24" cy="24" r="24" fill="red"/><path d="M16 16L32 32M32 16L16 32" stroke="white" stroke-width="2"/></svg>');
   }
   
   /* Message text */
